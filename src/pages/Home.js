@@ -8,10 +8,10 @@ import Mission from "../components/Mission"
 //import Navbar from '../components/Navbar'
 import Testimonials from "../components/Testimonials"
 import News from "../components/News"
-// import Table from "../components/Table"
-// import Staff from '../components/Staff';
+// import Tables from "../components/Tables"
 
 const Home = () => {
+  
   return (
     <>
       {/*<Navbar/>*/}
@@ -22,8 +22,7 @@ const Home = () => {
       <News/>
       <Testimonials/>
       <Footer/> 
-      {/* <Staff /> */}
-      {/* <Table /> */}
+      {/* <Tables /> */}
     </>
   );
 }

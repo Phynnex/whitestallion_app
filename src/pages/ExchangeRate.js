@@ -32,30 +32,42 @@ class ExchangeRate extends Component {
     return (
       <>
         <section>
-            <section className="exchangerate-container">
+          <section className="exchangerate-container">
             <section className="exchangerate-header">
-            <Navbar />
-            <section>
-              <h1>Digitital Currency Value</h1>
-              <p>Live Market trades showing the price and value of 100 cryptocurrencies</p>
+              <Navbar />
+              <section>
+                <h1>Digital Currency Value</h1>
+                <p>
+                  Live Market trades showing the price and value of 100
+                  cryptocurrencies
+                </p>
+              </section>
             </section>
-            </section>
-            </section>
-            <div>
-            {this.state.coinlist.map((crypto, i) => ( 
-              <div key={i}>
-                
-                <div>{crypto.CoinInfo.Name}</div>
-                <div>{crypto.CoinInfo.FullName}</div>
-                <div>{crypto.DISPLAY.USD.PRICE}</div>
-                <div>{crypto.DISPLAY.USD.MKTCAP}</div>
-                <div>{crypto.DISPLAY.USD.VOLUME24HOUR}</div>
-                <div>{crypto.DISPLAY.USD.CHANGE24HOUR}</div>
-                <div>{crypto.DISPLAY.USD.SUPPLY}</div>
-              </div>
+          </section>
+          <table>
+            <tr>
+              <th>symbol</th>
+              <th>Coin Name</th>
+              <th>Price</th>
+              <th>Mkt Cap</th>
+              <th>Vol (24h)</th>
+              <th>Change (24h)</th>
+              <th>Supply Chain</th>
+            </tr>
+
+            {this.state.coinlist.map((crypto, i) => (
+              <tr key={i}>
+                <td>{crypto.CoinInfo.Name}</td>
+                <td>{crypto.CoinInfo.FullName}</td>
+                <td>{crypto.DISPLAY.USD.PRICE}</td>
+                <td>{crypto.DISPLAY.USD.MKTCAP}</td>
+                <td>{crypto.DISPLAY.USD.VOLUME24HOUR}</td>
+                <td>{crypto.DISPLAY.USD.CHANGE24HOUR}</td>
+                <td>{crypto.DISPLAY.USD.SUPPLY}</td>
+              </tr>
             ))}
-            </div>
-          <Footer/>
+          </table>
+          <Footer />
         </section>
       </>
     );

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Navbar from '../components/Navbar';
+import News from '../components/News';
 import Footer from '../components/Footer';
 
 import { Accordion, Icon } from 'semantic-ui-react'
@@ -388,6 +389,7 @@ export default class Faqs extends Component {
           </section>
         </Accordion>
         </section>
+        <News />
         </section>
         <section><Footer /></section>
       </>

@@ -19,8 +19,10 @@ const AboutCrypto = () => {
             <p>
             A cryptocurrency (or crypto currency) is a digital asset designed to work as a medium of exchange wherein individual coin ownership records are stored in a ledger existing in a form of computerized database using strong cryptography to secure transaction records, to control the creation of additional coins, and to verify the transfer of coin ownership.It typically does not exist in physical form (like paper money) and is typically not issued by a central authority
             </p>
-            <section className="btn-text"><Link to="/faqs">
-              <button className="Discover">Discover</button></Link>
+            <section className="btn-text">
+              <Link to="/faqs">
+              <button className="Discover">Discover</button>
+              </Link>
             </section>
           </section>
           <section className="clear"></section>

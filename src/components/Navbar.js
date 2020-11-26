@@ -20,7 +20,7 @@ const Navbar = () => {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about_us">About Us</Link></li>
             <li><Link to="/exchangerate">ExchangeRate</Link></li>
-            <li><Link to="/buy_sell">Buy/Sell</Link></li>
+            <li><Link to="/services">Services</Link></li>
             <li><Link to="/faqs">FAQs</Link></li>
           </ul>
         </nav>
